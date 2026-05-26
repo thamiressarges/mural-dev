@@ -1,73 +1,189 @@
-# React + TypeScript + Vite
+# DevMural
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DevMural é uma aplicação web desenvolvida para exibir projetos pessoais de forma simples e organizada.
+O sistema possui autenticação de administrador utilizando Firebase Authentication e gerenciamento de projetos com Firebase Firestore.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 Deploy
+🔗 Acesse o projeto online
 
-## React Compiler
+Adicione aqui o link da aplicação hospedada na Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 [https://seu-projeto.vercel.app](https://mural-dev.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 📸 Screenshots
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🏠 Home
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+> Adicione aqui a screenshot da Home
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+![Home](./src/images/screenshots/home.png)
+
+---
+
+## 🔐 Login
+
+> Adicione aqui a screenshot da tela de Login
+
+![Login](./src/images/screenshots/login.png)
+
+---
+
+## ⚙️ Painel Admin
+
+> Adicione aqui a screenshot da tela Admin
+
+![Adicionar](./src/images/screenshots/adicionar.png)
+
+---
+
+## 📂 Gerenciamento de Projetos
+
+> Adicione aqui a screenshot da tela de Projetos
+
+```md
+![Projetos](./src/images/screenshots/projetos.png)
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# ✨ Funcionalidades
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* ✅ Exibição de projetos na Home
+* ✅ Login de administrador
+* ✅ Rotas privadas
+* ✅ Cadastro de projetos
+* ✅ Exclusão de projetos
+* ✅ Integração com Firebase
+* ✅ Atualização em tempo real com Firestore
+* ✅ Layout responsivo utilizando TailwindCSS
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+## Frontend
+
+* React
+* TypeScript
+* React Router DOM
+* TailwindCSS
+* React Icons
+
+## Backend / Serviços
+
+* Firebase Authentication
+* Firebase Firestore
+
+---
+
+# 📂 Estrutura do Projeto
+
+```bash
+src/
+│
+├── components/
+├── pages/
+│   ├── home/
+│   ├── login/
+│   ├── admin/
+│   ├── projects/
+│   └── Error/
+│
+├── routes/
+├── services/
+├── images/
+└── App.tsx
 ```
+
+---
+
+# 🔥 Configuração do Firebase
+
+Crie um projeto no Firebase e adicione as credenciais no arquivo:
+
+```bash
+src/services/firebaseConnection.ts
+```
+
+Exemplo:
+
+```ts
+const firebaseConfig = {
+  apiKey: "SUA_API_KEY",
+  authDomain: "SEU_AUTH_DOMAIN",
+  projectId: "SEU_PROJECT_ID",
+  storageBucket: "SEU_STORAGE_BUCKET",
+  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
+  appId: "SEU_APP_ID"
+};
+```
+
+---
+
+# ▶️ Como Executar o Projeto
+
+## Clone o repositório
+
+```bash
+git clone https://github.com/seuusuario/devmural.git
+```
+
+---
+
+## Acesse a pasta
+
+```bash
+cd devmural
+```
+
+---
+
+## Instale as dependências
+
+```bash
+npm install
+```
+
+---
+
+## Execute o projeto
+
+```bash
+npm run dev
+```
+
+---
+
+# 🔐 Rotas
+
+| Rota              | Descrição                  |
+| ----------------- | -------------------------- |
+| `/`               | Página inicial             |
+| `/login`          | Login do administrador     |
+| `/admin`          | Cadastro de projetos       |
+| `/admin/projects` | Gerenciamento dos projetos |
+
+---
+
+# 📌 Melhorias Futuras
+
+* [ ] Upload de imagens dos projetos
+* [ ] Editar projetos
+* [ ] Tema dark mode
+* [ ] Melhor feedback visual
+* [ ] Dashboard com estatísticas
+* [ ] Sistema de categorias/tags
+
+---
+
+# 👩‍💻 Autora
+
+Desenvolvido por **Thamires Sarges** 💙
+
+* LinkedIn: [https://linkedin.com/in/seuperfil](https://www.linkedin.com/in/thamires-sarges/)
+
+---
