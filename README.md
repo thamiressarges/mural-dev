@@ -8,8 +8,6 @@ O sistema possui autenticação de administrador utilizando Firebase Authenticat
 🌐 Deploy
 🔗 Acesse o projeto online
 
-Adicione aqui o link da aplicação hospedada na Vercel
-
 🔗 [https://seu-projeto.vercel.app](https://mural-dev.vercel.app)
 
 ---
@@ -38,9 +36,7 @@ Adicione aqui o link da aplicação hospedada na Vercel
 
 ## 📂 Gerenciamento de Projetos
 
-```md
 ![Projetos](./src/images/screenshots/projects.png)
-```
 
 ---
 
