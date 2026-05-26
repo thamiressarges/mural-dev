@@ -18,7 +18,6 @@ Adicione aqui o link da aplicação hospedada na Vercel
 
 ## 🏠 Home
 
-> Adicione aqui a screenshot da Home
 
 ![Home](./src/images/screenshots/home.png)
 
@@ -26,15 +25,12 @@ Adicione aqui o link da aplicação hospedada na Vercel
 
 ## 🔐 Login
 
-> Adicione aqui a screenshot da tela de Login
-
 ![Login](./src/images/screenshots/login.png)
 
 ---
 
 ## ⚙️ Painel Admin
 
-> Adicione aqui a screenshot da tela Admin
 
 ![Adicionar](./src/images/screenshots/adicionar.png)
 
@@ -42,10 +38,8 @@ Adicione aqui o link da aplicação hospedada na Vercel
 
 ## 📂 Gerenciamento de Projetos
 
-> Adicione aqui a screenshot da tela de Projetos
-
 ```md
-![Projetos](./src/images/screenshots/projetos.png)
+![Projetos](./src/images/screenshots/projects.png)
 ```
 
 ---
